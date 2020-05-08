@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D13C0E5-2436-41A7-B8D8-DF56CA3238A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Labyrinth</RootNamespace>
+    <AssemblyName>Labyrinth</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>labirint.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LabyrinthObjects\Flashing_wall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Flashing_wall.Designer.cs">
+      <DependentUpon>Flashing_wall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Ice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Ice.Designer.cs">
+      <DependentUpon>Ice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Level02.Designer.cs">
+      <DependentUpon>Level02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Level03.Designer.cs">
+      <DependentUpon>Level03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level04.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Level04.Designer.cs">
+      <DependentUpon>Level04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Finish.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Finish.Designer.cs">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Level01.Designer.cs">
+      <DependentUpon>Level01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Start.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Door.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Door.Designer.cs">
+      <DependentUpon>Door.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level05.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Level05.Designer.cs">
+      <DependentUpon>Level05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.Designer.cs">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleForm.Designer.cs">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Key.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Key.Designer.cs">
+      <DependentUpon>Key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PlaySound.cs" />
+    <Compile Include="MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Wall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabyrinthObjects\Wall.Designer.cs">
+      <DependentUpon>Wall.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LabyrinthObjects\Flashing_wall.resx">
+      <DependentUpon>Flashing_wall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Ice.resx">
+      <DependentUpon>Ice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level02.resx">
+      <DependentUpon>Level02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level03.resx">
+      <DependentUpon>Level03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level04.resx">
+      <DependentUpon>Level04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Finish.resx">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level01.resx">
+      <DependentUpon>Level01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Door.resx">
+      <DependentUpon>Door.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level05.resx">
+      <DependentUpon>Level05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleForm.resx">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Key.resx">
+      <DependentUpon>Key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabyrinthObjects\Wall.resx">
+      <DependentUpon>Wall.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="labirint.ico" />
+    <None Include="Resources\start.jpg" />
+    <None Include="Resources\labirint.ico" />
+    <None Include="Resources\victory.wav" />
+    <None Include="Resources\start.wav" />
+    <None Include="Resources\key.wav" />
+    <None Include="Resources\finish.wav" />
+    <None Include="Resources\fail.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
